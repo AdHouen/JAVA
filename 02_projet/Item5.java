@@ -14,7 +14,7 @@ public class Item5 {
         double c = Math.PI/2;
         System.out.println(Math.sqrt(i));
         System.out.println(Math.cos(c));
-        System.out.format("%.10f", + (Math.cos(c))); //<=== avoir le cosinus avec par exmple 10décimales
+        // System.out.format("%.10f", + (Math.cos(c))); //<=== avoir le cosinus avec par exmple 10décimales
         
     }
     

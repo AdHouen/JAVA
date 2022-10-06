@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+public class Version1 {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        String nom, prenom, adresse, carte, preference;
+        char rep;
+
+        do {    
+                //SAISIE
+            System.out.println("Nom du cavalier : ");
+            nom = sc.nextLine();
+            System.out.println("Prenom du cavalier : ");
+            prenom = sc.nextLine();
+            System.out.println("Entrer votre adresse : ");
+            adresse = sc.nextLine();
+            System.out.println("Entrer votre No de carte FNTE : ");
+            carte = sc.nextLine();
+            System.out.println("Entrer la liste de vos 3 chevaux preferes : ");
+            preference = sc.nextLine();
+
+                // PRESENTATION
+            System.out.println("Cavalier No" + carte);
+            System.out.println("\t" + prenom + " " + nom);
+            System.out.println("\t" + adresse);
+            System.out.println("\tChevaux : " + preference);
+
+                //MESSAGE DE FIN
+            System.out.print("\n\nVoulez-vous continuer (O/N) ? ");
+            rep = sc.nextLine().charAt(0);
+        } while (rep == 'o');
+
+        sc.close();
+    }    
+}
