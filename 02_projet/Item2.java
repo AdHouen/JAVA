@@ -3,10 +3,11 @@ public class Item2 {
         int a = 1;
         int b = 1;
 
-        System.out.println( a + "+" + b +"=" + (a + b)); 
+        System.out.println( a + "+" + b +"=" + (a + b));
+        // System.out.println(a + "+" + b +"=" + addition(a, b)); 
     }
-    public static int addition(int a, int b) {
-        int resultat = a + b;
-        return resultat;
-    }
+    // public static int addition(int a, int b) {
+    //     int resultat = a + b;
+    //     return resultat;
+    // }
 }
