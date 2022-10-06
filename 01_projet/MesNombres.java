@@ -5,7 +5,7 @@ public class MesNombres {
         
         System.out.println("Entrer la limite de nombre a calculer");
         Scanner clavier = new Scanner(System.in);
-        short limite = clavier.nextShort();
+        int limite = clavier.nextInt();
 
 
 
@@ -16,11 +16,16 @@ public class MesNombres {
         
         }*/
 
-        for(byte i = 1 ; i<=limite ; i++) {
+        /*for(byte i = 1 ; i<=limite ; i++) {
             short j=(short)Math.pow(i,2);
             float f=(float)Math.sqrt(i);
             System.out.printf("%d | %d | %f\n",i,j,f);
-            
+        }*/
+
+         for(int i = 1 ; i<=limite ; i++) {
+            int j=(int)Math.pow(i,2);
+            float f=(float)Math.sqrt(i);
+            System.out.printf("%d | %d | %f\n",i,j,f);
         }
     }
 }
