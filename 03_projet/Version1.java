@@ -5,7 +5,7 @@ public class Version1 {
         
         Scanner sc = new Scanner(System.in);
         String nom, prenom, adresse, carte, preference;
-        char rep;
+        String rep;
 
         do {    
                 //SAISIE
@@ -22,47 +22,37 @@ public class Version1 {
 
                 // PRESENTATION
             System.out.println("Cavalier No " + carte);
-            System.out.println("\t" + prenom + " " + nom);
-            System.out.println("\t" + adresse);
-            System.out.println("\tChevaux : " + preference);
+            System.out.println("\t " + prenom + " " + nom);
+            System.out.println("\t " + adresse);
+            System.out.println("\t Chevaux : " + preference);
 
                 //MESSAGE DE FIN
             System.out.print("\n\nVoulez-vous continuer (O/N) ? ");
-            rep = sc.nextLine().charAt(0);
-            do {         
-                if( = 'o')
+            rep = sc.nextLine();
+            
+            do { 
+
+                if(rep.equals("o"))
                 {
                     System.out.println("On continue");
+                    break;
+                    
                 }
-                else if(rep == 'n')
+                else if(rep.equals("n"))
                 {
-                    System.out.println("On arrete"); 
+                    System.out.println("On arrete");
+                    break;
                 }
-            } while (rep == 'n' || rep == 'o');
-        
-            //  {
-            //     if(rep == 'o')
-            //     {
-            //         System.out.println("On continue");
-            //     }
-            //     if(rep == 'n')
-            //     {
-            //         System.out.println("On arrete");
-            //         break;
-            //     }
-            //     else {
-            //         System.out.println("Entrer la bonne lettre");
-            //     } 
-            // } 
-                
-            
+                else
+                {
+                    System.out.print("\n\nVoulez-vous continuer (O/N) ? ");
+                    rep = sc.nextLine();
+                }
+            } while (!rep.equals("o") || !rep.equals("n"));              
             
     
-        } while (rep == 'o');
+        } while (rep.equals("o"));
 
-        
-
-    
         sc.close();
     }    
 }
