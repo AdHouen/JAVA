@@ -1,5 +1,3 @@
-import java.util.DoubleSummaryStatistics;
-
 public class Item5 {
     // Utiliser la classe java.lang.Math pour afficher des calculs scientifiques 
     // Lecon retenu : 
