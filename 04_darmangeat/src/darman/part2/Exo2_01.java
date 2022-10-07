@@ -1,10 +1,13 @@
-package darman.part2;
+// Quel résultat produit le programme suivant ?
 
-public class Exo2_01 {
+// Variables val, double numériques
+// Début
+// Val ← 231
+// Double ← Val * 2
+// Ecrire Val
+// Ecrire Double
+// Fin
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+// ==> Reponse : 
 
-	}
-
-}
+// On verra apparaître à l’écran 231, puis 462 (qui vaut 231 * 2)

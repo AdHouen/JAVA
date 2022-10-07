@@ -1,10 +1,14 @@
-package darman.part1;
+// Variables A, B en Entier
+// Début
+// A ← 5
+// B ← 2
+// A ← B
+// B ← A
+// Fin
 
-public class Exo1_05 {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
-}
+// ==> Reponse : 
+// Après         La valeur des variables est :
+// A ← 5         A = 5          B = ?
+// B ← 2         A = 5          B = 2
+// A ← B         A = 2          B = 2
+// B ← A         A = 2         B = 2
