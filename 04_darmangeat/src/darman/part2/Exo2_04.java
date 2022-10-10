@@ -44,9 +44,6 @@ public class Exo2_04 {
 		System.out.printf("Le prix total TTC est de : %.2f € " , prixTTC);
 		
 		
-		
-		
 	}
-	
 	
 }
