@@ -11,3 +11,24 @@
 // Fin
 
 // En fait, quel que soit le nombre de variables, une seule variable temporaire suffit…
+package darman.part1 ;
+
+public class Exo1_07 {
+    public static void main(String[] args) {
+    	int A = 1;
+    	int B = 5;
+    	int C = 10;
+    	int D;
+    	
+    	D = C;
+        C = B;
+        B = A;
+       	A = D; 
+        
+       	
+        System.out.println("Valeur de A : " + A + " Valeur de B : " + B + " Valeur de C : " + C);
+        
+    }
+    
+    
+}

@@ -1,13 +1,16 @@
-// Variables A, B en Entier
-// Début
-// A ← 1
-// B ← A + 3
-// A ← 3
-// Fin
+package darman.part1 ;
 
-// ==> Reponse : 
-// Après         La valeur des variables est :
-// A ← 1         A = 1          B = ?
-// B ← A + 3     A = 1          B = 4
-// A ← 3         A = 3         B = 4
+public class Exo1_01 {
+    public static void main(String[] args) {
+        int A = 1;
+        int B = (A + 3);
+        A = 3;
+        
+        
+        System.out.println("Valeur de A : " + A + " Valeur de B : " + B);
+    
+    
+    
+    }
 
+}

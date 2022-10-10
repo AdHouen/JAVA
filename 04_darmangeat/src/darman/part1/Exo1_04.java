@@ -16,5 +16,21 @@
 // A ← C        A = 13         B = 13         C = 13
 
 	
+package darman.part1 ;
 
+public class Exo1_04 {
+    public static void main(String[] args) {
+        int A = 3;
+        int B = 10;
+        int C = A + B;
+        B = A + B; 
+        A = C;
+        
+        System.out.println("Valeur de A : " + A + " Valeur de B : " + B + " Valeur de C : " + C);
+                
+               
+    }
+    
+
+}
 
