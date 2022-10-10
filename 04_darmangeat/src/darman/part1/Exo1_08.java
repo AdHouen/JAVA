@@ -20,6 +20,9 @@ public class Exo1_08 {
        	
         System.out.println("Valeur de A : " + A + " Valeur de B : " + B + " Valeur de C : " + C);
         
+        System.out.println("Erreur : On ne peut pas additionner 2 chaines de carac");
+        
+        
     }
     
     

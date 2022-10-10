@@ -12,6 +12,7 @@
 
 package darman.part1 ;
 
+
 public class Exo1_09 {
     public static void main(String[] args) {
     	String A = "423";
@@ -20,6 +21,9 @@ public class Exo1_09 {
         
        	
         System.out.println("Valeur de A : " + A + " Valeur de B : " + B + " Valeur de C : " + C);
+        
+        
+       
         
     }
     
