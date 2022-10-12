@@ -3,9 +3,9 @@ package darman.part3;
 import java.util.Scanner;
 
 public class Exo3_06{
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
 	
 		System.out.println("Veuillez entrer l'age de votre enfant : ");
 		

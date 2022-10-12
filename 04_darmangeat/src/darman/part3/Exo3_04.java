@@ -3,6 +3,7 @@ package darman.part3;
 import java.util.Scanner;
 
 public class Exo3_04{
+	
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);

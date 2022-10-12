@@ -2,8 +2,6 @@ package darman.part4;
 
 import java.util.Scanner;
 
-import javax.swing.plaf.basic.BasicToolTipUI;
-
 public class Exo4_06 {
 	
 	static Scanner scanner = new Scanner(System.in);

@@ -2,7 +2,6 @@ package darman.part4;
 
 import java.util.Scanner;
 
-import javax.swing.border.EtchedBorder;
 
 public class Exo4_03 {
 	

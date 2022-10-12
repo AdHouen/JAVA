@@ -4,14 +4,15 @@ import java.util.Scanner;
 
 
 public class Exo3_01 {
+	
+	static Scanner scanner = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
 		int a;
 		
 		System.out.println("Entrer une valeur : ");
-		a = sc.nextInt();
+		a = scanner.nextInt();
 	
 			if (a > 0) {
 				
