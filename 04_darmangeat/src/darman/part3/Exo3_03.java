@@ -12,10 +12,7 @@ public class Exo3_03 {
 		String b = scanner.next();
 		String c = scanner.next();
 		
-//		if ((a < b) || (b < c)) {
-//			
-//			
-//		}
+		
 		if (a.compareToIgnoreCase(b)< 0 & b.compareToIgnoreCase(c)< 0) {
 			System.out.println("Ces noms sont classés alphabétiquement");
 			
