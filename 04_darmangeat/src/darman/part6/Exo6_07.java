@@ -21,7 +21,7 @@ public class Exo6_07 {
 
 		double moyenne = total / monTabNote.length;
 
-		System.out.printf("Mes notes sont : %s\n ", Arrays.toString(monTabNote));
+		System.out.printf(" Mes notes sont : %s\n ", Arrays.toString(monTabNote));
 
 		System.out.printf("La moyenne de mes notes est %.2f ", moyenne);
 
