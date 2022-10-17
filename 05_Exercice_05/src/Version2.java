@@ -29,9 +29,10 @@ public class Version2 {
 				
 			} else {
 				System.out.println(" " + x + " \t");
+				
 			}
+			
+			
 		}
-		
 	}
-
 }
