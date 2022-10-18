@@ -26,11 +26,9 @@ public class Exercice06 {
         }
 		
 		
-		
-		
-		
-		
 
 	}
 
 }
+
+
