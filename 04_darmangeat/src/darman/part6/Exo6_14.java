@@ -33,19 +33,11 @@ public class Exo6_14 {
 			
 		}
 		
-		
-		
-		
 		System.out.println("La moyenne de la classe est de " + moyenneClass);
 		System.out.println("La moyenne de l'eleve est de " + moyenneEleve);
 		System.out.println();
 		System.out.println("L'eleve a "+ noteSup + " note(s) au dessus de la moyenne");
 		
-		
-		
-		
-		
-
 	}
 
 }
