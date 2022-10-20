@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
 
-public class Exo7_02 {
+public class Exo7_02_1 {
 	
 	static Scanner scanner = new Scanner(System.in);
 	
