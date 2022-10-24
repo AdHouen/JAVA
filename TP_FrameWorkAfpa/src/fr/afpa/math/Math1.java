@@ -1,7 +1,7 @@
 package fr.afpa.math;
 import java.util.Scanner;
 
-public class Math {
+public class Math1 {
 
 	static Scanner scanner = new Scanner(System.in);
 
