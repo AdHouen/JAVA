@@ -8,18 +8,9 @@ public class Math1 {
 	static String rep = "";
 	static long nbFacto, nbFacto2;
 
-	public static void main(String[] args) {
 
-		do {
-
-			factorielleFor();
-
-			rep = reponse();
-
-		} while (rep.equalsIgnoreCase("o"));
 //		} while (reponse2());
 
-	}
 
 	private static void factorielleFor() {
 	

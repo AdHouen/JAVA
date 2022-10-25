@@ -6,25 +6,14 @@ import javax.swing.JOptionPane;
 
 public class Math2 {
 
-	static Scanner scanner = new Scanner(System.in);
+	public static Scanner scanner = new Scanner(System.in);
 
-	static String rep = "";
-	static long nbFacto, nbFacto2;
+	public static String rep = "";
+	public static long nbFacto, nbFacto2;
 
-	public static void main(String[] args) {
+	
 
-		do {
-
-			factorielleFor();
-
-			rep = reponse();
-
-		} while (rep.equalsIgnoreCase("o"));
-//		} while (reponse2());
-
-	}
-
-	private static void factorielleFor() {
+	public static void factorielleFor() {
 
 		JOptionPane.showMessageDialog(null, "Veuillez entrer un nombre pour connaitre la valeur de sa factorielle ");
 		String saisir = JOptionPane.showInputDialog("Entrer un nombre ");
@@ -32,7 +21,7 @@ public class Math2 {
 		long nbFacto = Long.parseLong(saisir);
 
 		long facto = 1;
-		int iteration = 1;
+		long iteration = 1;
 
 		
 
@@ -60,14 +49,31 @@ public class Math2 {
 		
 		 
 
-//		int facto = 1;
-//		for (long i = facto-1 ; i > 0 ; i--){
-//          facto *= i;
-//      }
+//		long facto = 1;
+//	      for (long i = facto-1 ; i > 0 ; i--){
+//	          facto *= i;
+//	      }
 
 	}
+	
+	   public static long factorielle(long i) {
+	       
+	       
+//	       System.out.println(i+" ");
+	        if (i == 0) return 1;
+	        else if (i < 0) {
+	            return -1;
+                
+            } else if (i > 20) {
+                return -2;
+                
+            }
+	        else return  (i * factorielle (i-1));
+	        
+	       
+	    }
 
-	private static String reponse() {
+	public static String reponse() {
 		String saisir = "";
 		do {
 //			JOptionPane.showMessageDialog(null,"\nVoulez-vous continuer (O/N) ? ");
@@ -91,7 +97,7 @@ public class Math2 {
 
 	}
 
-//	private static boolean reponse2() {
+//	public static boolean reponse2() {
 //		
 //		do {
 //			System.out.print("\nVoulez-vous continuer (O/N) ? ");
@@ -112,5 +118,7 @@ public class Math2 {
 //		
 //		return false;
 //	}
+	
+	
 
 }
