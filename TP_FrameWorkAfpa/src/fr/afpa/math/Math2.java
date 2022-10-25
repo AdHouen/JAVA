@@ -11,9 +11,15 @@ public class Math2 {
 
     public static String rep = "";
     public static long nbFacto, nbFacto2;
-    public static BigDecimal valEuros;
-    public static BigDecimal valDollars;
+    public static BigDecimal valEuros= scanner.nextBigDecimal();
+    public static BigDecimal conValDollars;
+    public static BigDecimal valDollars = scanner.nextBigDecimal();
+    public static BigDecimal conValEuros;
+    
+    
     public static final BigDecimal TAUX_EURO_DOLLAR = new BigDecimal("0.9953");
+    public static final BigDecimal TAUX_DOLLAR_EURO = new BigDecimal("1.0032");
+    
     
 
   
@@ -28,7 +34,7 @@ public class Math2 {
         long facto = 1;
         long iteration = 1;
 
-        while (iteration <= nbFacto) {
+        while (iteration <= nbFacto) { 
             facto = facto * iteration;
             iteration = iteration + 1;
 
@@ -56,7 +62,6 @@ public class Math2 {
 
     public static long factorielle(long i) {
 
-//	       System.out.println(i+" ");
         if (i == 0)
             return 1;
         else if (i < 0) {
@@ -82,7 +87,7 @@ public class Math2 {
                 JOptionPane.showMessageDialog(null, "On continue");
 
                 break;
-
+ 
             } else if (saisir.equals("n")) {
                 JOptionPane.showMessageDialog(null, "On arrete");
                 break;
@@ -116,11 +121,18 @@ public class Math2 {
 //		return false;
 //	}
 
-    public static BigDecimal euroToDollar(BigDecimal euros) {
+    public static BigDecimal euroToDollar(BigDecimal euro) {
 
-        valDollars = valEuros.multiply(TAUX_EURO_DOLLAR);
+        conValDollars = valEuros.multiply(TAUX_EURO_DOLLAR);
 
-        return valDollars;
+        return conValDollars;
+    }
+    
+    public static BigDecimal dollarToEuro(BigDecimal dollar) {
+
+        conValEuros = valDollars.multiply(TAUX_DOLLAR_EURO);
+
+        return conValEuros;
     }
 
 }

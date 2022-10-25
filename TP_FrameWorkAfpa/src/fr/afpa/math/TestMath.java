@@ -1,6 +1,6 @@
 package fr.afpa.math;
 
-
+//import java.math.BigDecimal;
 
 public class TestMath {
 
@@ -12,6 +12,10 @@ public class TestMath {
         factorielleTest21();
         factorielleTestMoinsUn();
         factorielleTest45();
+//        euroToDollarTest1();
+//        euroToDollarTest2();
+//        dollarToEuroTest1();
+//        dollarToEuroTest2();
 
     }
 
@@ -35,7 +39,7 @@ public class TestMath {
 
     }
 
-    private static void factorielleTest21() {
+    private static void factorielleTest21() { 
         if (Math2.factorielle(21) == -2) {
             System.out.println("Test OK");
 
@@ -79,5 +83,48 @@ public class TestMath {
         }
 
     }
+    
+//    private static void euroToDollarTest1() {
+//
+//        if () {
+//            System.out.println("Test OK");
+//
+//        } else {
+//            System.err.println("Test NOK : La factorielle de 0 vaut 1");
+//        }
+//
+//    }
+//    private static void euroToDollarTest2() {
+//
+//        if (Math2.euroToDollar(new BigDecimal(10)).compareTo(new BigDecimal(9.9530)) == 0){
+//            System.out.println("Test OK");
+//
+//        } else {
+//            System.err.println("Test NOK : La factorielle de 0 vaut 1");
+//        }
+//
+//    }
+//    private static void dollarToEuroTest1() {
+//
+//        if (Math2.dollarToEuro(new BigDecimal(12)).compareTo(new BigDecimal(12.0384)) == 0) {
+//            System.out.println("Test OK");
+//
+//        } else {
+//            System.err.println("Test NOK : La factorielle de 0 vaut 1");
+//        }
+//
+//    }
+//    private static void dollarToEuroTest2() {
+//
+//        if () {
+//            System.out.println("Test OK");
+//
+//        } else {
+//            System.err.println("Test NOK : La factorielle de 0 vaut 1");
+//        }
+//
+//    }
+    
+    
 
 }

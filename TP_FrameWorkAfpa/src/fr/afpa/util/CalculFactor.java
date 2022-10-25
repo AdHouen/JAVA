@@ -25,7 +25,7 @@ public class CalculFactor {
                 JOptionPane.showMessageDialog(null, "Erreur -2 : Le nombre est trop grand");
 
             } else if (result > 0) {
-                JOptionPane.showMessageDialog(null, "La factorielle de " + nbFacto + " est de " + result);
+                JOptionPane.showMessageDialog(null, "La factorielle de " + nbFacto + " est de " + result); 
 
             }
 
