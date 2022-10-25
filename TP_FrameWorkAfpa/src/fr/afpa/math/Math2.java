@@ -1,101 +1,98 @@
 package fr.afpa.math;
 
+import java.math.BigDecimal;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
 public class Math2 {
 
-	public static Scanner scanner = new Scanner(System.in);
+    public static Scanner scanner = new Scanner(System.in);
 
-	public static String rep = "";
-	public static long nbFacto, nbFacto2;
+    public static String rep = "";
+    public static long nbFacto, nbFacto2;
+    public static BigDecimal valEuros;
+    public static BigDecimal valDollars;
+    public static final BigDecimal TAUX_EURO_DOLLAR = new BigDecimal("0.9953");
+    
 
-	
+  
 
-	public static void factorielleFor() {
+    public static void factorielleFor() {
 
-		JOptionPane.showMessageDialog(null, "Veuillez entrer un nombre pour connaitre la valeur de sa factorielle ");
-		String saisir = JOptionPane.showInputDialog("Entrer un nombre ");
+        JOptionPane.showMessageDialog(null, "Veuillez entrer un nombre pour connaitre la valeur de sa factorielle ");
+        String saisir = JOptionPane.showInputDialog("Entrer un nombre ");
 
-		long nbFacto = Long.parseLong(saisir);
+        long nbFacto = Long.parseLong(saisir);
 
-		long facto = 1;
-		long iteration = 1;
+        long facto = 1;
+        long iteration = 1;
 
-		
+        while (iteration <= nbFacto) {
+            facto = facto * iteration;
+            iteration = iteration + 1;
 
-		while (iteration <= nbFacto) {
-			facto = facto * iteration;
-			iteration = iteration + 1;
-		
-			
+        }
+        if (nbFacto > 0 && nbFacto <= 20) {
+            JOptionPane.showMessageDialog(null, "La factorielle de " + nbFacto + " est de " + facto);
 
-		}
-		if (nbFacto > 0 && nbFacto <= 20) {
-			JOptionPane.showMessageDialog(null, "La factorielle de " + nbFacto + " est de " + facto);
-			
-		}
-		
-		if (nbFacto < 1) {
-			JOptionPane.showMessageDialog(null, "Erreur -1");
-			
-		}
-		if (nbFacto > 20) {
-			JOptionPane.showMessageDialog(null, "Erreur -2");
-			
-		}
-		
-		
-		 
+        }
+
+        if (nbFacto < 1) {
+            JOptionPane.showMessageDialog(null, "Erreur -1");
+
+        }
+        if (nbFacto > 20) {
+            JOptionPane.showMessageDialog(null, "Erreur -2");
+
+        }
 
 //		long facto = 1;
 //	      for (long i = facto-1 ; i > 0 ; i--){
 //	          facto *= i;
 //	      }
 
-	}
-	
-	   public static long factorielle(long i) {
-	       
-	       
-//	       System.out.println(i+" ");
-	        if (i == 0) return 1;
-	        else if (i < 0) {
-	            return -1;
-                
-            } else if (i > 20) {
-                return -2;
-                
-            }
-	        else return  (i * factorielle (i-1));
-	        
-	       
-	    }
+    }
 
-	public static String reponse() {
-		String saisir = "";
-		do {
+    public static long factorielle(long i) {
+
+//	       System.out.println(i+" ");
+        if (i == 0)
+            return 1;
+        else if (i < 0) {
+            return -1;
+
+        } else if (i > 20) {
+            return -2;
+
+        } else
+            return (i * factorielle(i - 1));
+
+    }
+
+    public static String reponse() {
+        String saisir = "";
+        do {
 //			JOptionPane.showMessageDialog(null,"\nVoulez-vous continuer (O/N) ? ");
-			saisir = JOptionPane.showInputDialog("Voulez-vous continuer (O/N) ?");
+            saisir = JOptionPane.showInputDialog("Voulez-vous continuer (O/N) ?");
 
 //			rep = scanner.nextLine();
 
-			if (saisir.equals("o")) {
-				JOptionPane.showMessageDialog(null, "On continue");
+            if (saisir.equals("o")) {
+                JOptionPane.showMessageDialog(null, "On continue");
 
-				break;
+                break;
 
-			} else if (saisir.equals("n")) {
-				JOptionPane.showMessageDialog(null, "On arrete");
-				break;
-			}
+            } else if (saisir.equals("n")) {
+                JOptionPane.showMessageDialog(null, "On arrete");
+                break;
+            }
 
-		} while (!saisir.equalsIgnoreCase("o") || !saisir.equalsIgnoreCase("n"));
+        } while (!saisir.equalsIgnoreCase("o") || !saisir.equalsIgnoreCase("n"));
 
-		return saisir;
+        return saisir;
 
-	}
+    }
 
 //	public static boolean reponse2() {
 //		
@@ -118,7 +115,12 @@ public class Math2 {
 //		
 //		return false;
 //	}
-	
-	
+
+    public static BigDecimal euroToDollar(BigDecimal euros) {
+
+        valDollars = valEuros.multiply(TAUX_EURO_DOLLAR);
+
+        return valDollars;
+    }
 
 }
