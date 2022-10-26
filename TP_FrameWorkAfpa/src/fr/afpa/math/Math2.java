@@ -11,10 +11,8 @@ public class Math2 {
 
     public static String rep = "";
     public static long nbFacto, nbFacto2;
-    public static BigDecimal valEuros= scanner.nextBigDecimal();
-    public static BigDecimal conValDollars;
-    public static BigDecimal valDollars = scanner.nextBigDecimal();
-    public static BigDecimal conValEuros;
+
+    
     
     
     public static final BigDecimal TAUX_EURO_DOLLAR = new BigDecimal("0.9953");
@@ -74,6 +72,21 @@ public class Math2 {
             return (i * factorielle(i - 1));
 
     }
+    
+    public static long factorielleAvecException (long i) {
+        
+        if (i == 0)
+            return 1; 
+        else if (i < 0) {
+            throw new IllegalArgumentException("Pas de valeur negative");
+
+        } else if (i > 20) {
+            throw new IllegalArgumentException("Pas de valeur superieur a 20");
+        }
+            
+            return (i * factorielle(i - 1));
+
+    }
 
     public static String reponse() {
         String saisir = "";
@@ -123,16 +136,14 @@ public class Math2 {
 
     public static BigDecimal euroToDollar(BigDecimal euro) {
 
-        conValDollars = valEuros.multiply(TAUX_EURO_DOLLAR);
 
-        return conValDollars;
+        return euro.multiply(TAUX_EURO_DOLLAR); 
     }
     
     public static BigDecimal dollarToEuro(BigDecimal dollar) {
 
-        conValEuros = valDollars.multiply(TAUX_DOLLAR_EURO);
 
-        return conValEuros;
+        return dollar.multiply(TAUX_DOLLAR_EURO);
     }
 
 }
