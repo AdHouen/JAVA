@@ -12,10 +12,72 @@ public class TestMath {
         factorielleTest20();
         factorielleTestUn();
         factorielleTestZero();
+        
+        
         euroToDollarTest1();
         euroToDollarTest2();
+        
         dollarToEuroTest1();
         dollarToEuroTest2();
+        
+        
+        
+        try {
+            Math2.factorielleAvecException(77);
+            System.err.println("Test 11 NOK");
+            
+        } catch (IllegalArgumentException e) {
+            
+            System.out.println("Test 11 OK " + e.getMessage());
+            
+        } catch (Exception e) {
+            System.err.println("Test 11 NOK : La Factorielle de 77 est hors limite");
+            
+        }
+        
+        try {
+            Math2.factorielleAvecException(-1);
+            System.err.println("Test 12 NOK");
+            
+        } catch (IllegalArgumentException e) {
+            
+            System.out.println("Test 12 OK " + e.getMessage());
+            
+        } catch (Exception e) {
+            System.err.println("Test 12 NOK : La Factorielle de -1 n'est pas possible");
+            
+        }
+        
+        try {
+            Math2.factorielleAvecException(21);
+            System.err.println("Test 12 NOK");
+            
+        } catch (IllegalArgumentException e) {
+            
+            System.out.println("Test 13 OK " + e.getMessage());
+            
+        } catch (Exception e) {
+            System.err.println("Test 13 NOK : La Factorielle de 45 est hors limite");
+            
+        }
+        try {
+            long max = 2432902008176640000L;
+
+            if (Math2.factorielleAvecException(20) == max) {
+                System.out.println("Test 14 OK");
+
+            } else {
+                System.err.println("Test 14 NOK : La factorielle de 20 vaut 2432902008176640000");
+            }
+            
+        } catch (IllegalArgumentException e) {
+            
+            System.err.println("Test 14 NOK " + e.getMessage());
+            
+        } catch (Exception e) {
+            System.err.println("Test 14 NOK : La factorielle de 20 vaut 2432902008176640000");
+            
+        }
 
     }
 
@@ -124,6 +186,8 @@ public class TestMath {
         }
 
     }
+    
+    
     
     
 

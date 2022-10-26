@@ -58,6 +58,8 @@ public class Convertisseur {
         System.exit(0);
 
         //////////////////// AVEC PRINTLN /////////////////
+        
+        
 //        System.out.println(
 //                "Voulez vous convertir des Euros € ===> Dollar $ (Taper 1) ou des Dollar $ ===> Euros € (Taper 2)");
 //        int choix = scanner.nextInt();
