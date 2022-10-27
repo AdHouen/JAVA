@@ -1,4 +1,4 @@
-import java.util.Arrays;
+
 import java.util.Scanner;
 
 public class Exercice10bis {
@@ -15,7 +15,7 @@ public class Exercice10bis {
 		
 		
 		System.out.println("Veuillez saisir les notes de la classe : ");
-		double note = scanner.nextInt();
+//		double note = scanner.nextInt();
 		
 		for (int i = 0; i < monTab.length; i++) {
 			System.out.println("Veuillez saisir la note numero " + (i+1) + " :");

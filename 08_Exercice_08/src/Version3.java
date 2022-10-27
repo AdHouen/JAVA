@@ -44,7 +44,10 @@ public class Version3 {
 	}
 
 	
-	private static void reponse() {
+	
+
+
+    private static void reponse() {
 		do {
 
 			if (reponse.equals("o")) {

@@ -1,6 +1,8 @@
 package fr.afpa.math;
 
 import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.RoundingMode;
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
@@ -12,15 +14,8 @@ public class Math2 {
     public static String rep = "";
     public static long nbFacto, nbFacto2;
 
-    
-    
-    
     public static final BigDecimal TAUX_EURO_DOLLAR = new BigDecimal("0.9953");
-    public static final BigDecimal TAUX_DOLLAR_EURO = new BigDecimal("1.0032");
-    
-    
-
-  
+//    public static final BigDecimal TAUX_DOLLAR_EURO = new BigDecimal("1.0032");
 
     public static void factorielleFor() {
 
@@ -32,7 +27,7 @@ public class Math2 {
         long facto = 1;
         long iteration = 1;
 
-        while (iteration <= nbFacto) { 
+        while (iteration <= nbFacto) {
             facto = facto * iteration;
             iteration = iteration + 1;
 
@@ -72,19 +67,19 @@ public class Math2 {
             return (i * factorielle(i - 1));
 
     }
-    
-    public static long factorielleAvecException (long i) {
-        
-        if (i == 0)
-            return 1; 
-        else if (i < 0) {
+
+    public static long factorielleAvecException(long i) {
+
+        if (i == 0) {
+            return 1;
+        } else if (i < 0) {
             throw new IllegalArgumentException("Pas de valeur negative");
 
         } else if (i > 20) {
             throw new IllegalArgumentException("Pas de valeur superieur a 20");
         }
-            
-            return (i * factorielle(i - 1));
+
+        return (i * factorielleAvecException(i - 1));
 
     }
 
@@ -100,7 +95,7 @@ public class Math2 {
                 JOptionPane.showMessageDialog(null, "On continue");
 
                 break;
- 
+
             } else if (saisir.equals("n")) {
                 JOptionPane.showMessageDialog(null, "On arrete");
                 break;
@@ -136,14 +131,29 @@ public class Math2 {
 
     public static BigDecimal euroToDollar(BigDecimal euro) {
 
-
-        return euro.multiply(TAUX_EURO_DOLLAR); 
+        return euro.multiply(TAUX_EURO_DOLLAR);
     }
-    
+
     public static BigDecimal dollarToEuro(BigDecimal dollar) {
 
-
-        return dollar.multiply(TAUX_DOLLAR_EURO);
+        return dollar.divide(TAUX_EURO_DOLLAR, 4 , RoundingMode.HALF_UP);
     }
 
+    public static BigInteger factorielleBig(BigInteger i) {
+        
+
+        if (i.equals(new BigInteger("0"))) {
+            return BigInteger.valueOf(1);
+
+        } else if (i.compareTo(new BigInteger("0")) < 0) {
+            throw new IllegalArgumentException("Pas de valeur negative");
+
+        }
+//            else if (i.compareTo(new BigInteger("20")) > 20) {
+//            throw new IllegalArgumentException("Pas de valeur superieur a 20");
+//        }
+        return i.multiply(factorielleBig(i.subtract(new BigInteger("1")))); 
+      
+    }
+    
 }
