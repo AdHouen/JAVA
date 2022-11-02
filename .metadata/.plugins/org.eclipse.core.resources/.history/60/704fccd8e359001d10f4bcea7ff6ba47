@@ -1,0 +1,10 @@
+package fr.afpa.tool;
+
+public class UtilitaireBookStore {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+
+    }
+
+}

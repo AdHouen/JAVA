@@ -1,0 +1,39 @@
+package fr.afpa.util;
+
+
+import java.util.Scanner;
+
+
+
+import fr.afpa.math.Math2;
+
+
+
+public class Convertisseur {
+    
+    public static Scanner scanner = new Scanner(System.in);
+    
+    
+
+    public static void main(String[] args) {
+        
+        System.out.println("Veuillez entrer la valeur a convertir en Dollars $:");
+        
+        Math2.euroToDollar(Math2.valEuros);
+        
+        System.out.println("La valeur en dollars est de " + Math2.valDollars + " $");
+        
+//        String saisie = JOptionPane.showInputDialog("Veuillez entrer la valeur a convertir en Dollars :");
+
+//        Math2.euroToDollar("saisie");
+
+//        System.out.println("La valeur en dollars est de " + new BigDecimal(saisie));
+//        JOptionPane.showMessageDialog(null, "La valeur en dollars est de " + Math2.euroToDollar(Math2.valEuros) + " $" );
+
+    }
+
+
+
+    
+
+}

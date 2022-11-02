@@ -1,0 +1,53 @@
+package fr.afpa.tool;
+
+import java.time.LocalDate;
+import java.time.ZoneId;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
+
+
+
+
+
+public class UtilitaireBookStore {
+    
+   
+    
+    public static void main(String[] args) {
+        
+        LocalDate now = LocalDate.now();
+        now = DateTimeFormatter("dd/MM/yyyy");
+        
+        System.out.println(now);
+        
+        
+       
+        
+                
+        
+    }
+    public static LocalDate convertToLocalDate(Date dateToConvert) {
+        return LocalDate.ofInstant(
+                 dateToConvert.toInstant(), ZoneId.systemDefault());
+    }
+    
+    private static LocalDate DateTimeFormatter(String string) {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+
+    static boolean isPretEnRetard (LocalDate dateEmpruntEffective, LocalDate maintenant, int dureeMaxPret) {
+        
+        
+        
+        
+        
+        
+        
+        return false;
+        
+    }
+
+
+}
