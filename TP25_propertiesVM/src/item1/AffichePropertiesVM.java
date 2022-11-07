@@ -10,7 +10,7 @@ public class AffichePropertiesVM {
 		Properties properties = System.getProperties();
 		
 		for (int i = 0; i < args.length; i++) {
-			sout
+			
 			
 		}
 		
