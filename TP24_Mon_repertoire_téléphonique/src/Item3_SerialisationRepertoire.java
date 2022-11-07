@@ -25,10 +25,10 @@ public class Item3_SerialisationRepertoire {
 
 		try {
 			FileOutputStream file = new FileOutputStream("repertoire.txt");
-			ObjectOutputStream obj = new ObjectOutputStream(file);
-			obj.writeObject(repertoireTelephonique);
+			ObjectOutputStream oos = new ObjectOutputStream(file);
+			oos.writeObject(repertoireTelephonique);
 			JOptionPane.showMessageDialog(null, "Export terminé", "Exportation", JOptionPane.INFORMATION_MESSAGE);
-			obj.close();
+			oos.close();
 		} catch (FileNotFoundException e) {
 			JOptionPane.showMessageDialog(null, "Le fichier repertoire.txt est introuvable", "Erreur",
 					JOptionPane.ERROR_MESSAGE);
